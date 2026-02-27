@@ -8,3 +8,10 @@ kind: KnativeServing
 metadata:
   name: knative-serving
   namespace: knative-serving
+spec:
+  ingress:
+    istio:
+      enabled: true
+  config:
+    network:
+      ingress-class: istio.ingress.networking.knative.dev

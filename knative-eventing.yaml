@@ -8,3 +8,7 @@ kind: KnativeEventing
 metadata:
   name: knative-eventing
   namespace: knative-eventing
+spec:
+  config:
+    network:
+      ingress-class: istio.ingress.networking.knative.dev
